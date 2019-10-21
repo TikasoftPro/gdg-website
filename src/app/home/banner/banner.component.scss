@@ -1,0 +1,21 @@
+@import '../../../styles.colors';
+@import '../../../styles.variables';
+
+#banner-container {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#banner-details {
+  margin-bottom: 100px;
+}
+
+#slogan {
+  margin-block-end: 0;
+
+  @media #{$medium-and-up} {
+    font-size: $h3-fontsize;
+  }
+}
