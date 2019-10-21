@@ -1,10 +1,14 @@
-import { Directive } from '@angular/core';
+import { Directive, OnInit, ElementRef } from '@angular/core';
+
+import { Sidenav } from 'materialize-css';
 
 @Directive({
   selector: '[gdgSidenav]'
 })
-export class SidenavDirective {
+export class SidenavDirective implements OnInit {
+  constructor(private element: ElementRef) {}
 
-  constructor() { }
-
+  ngOnInit(): void {
+    Sidenav.init(this.element.nativeElement);
+  }
 }

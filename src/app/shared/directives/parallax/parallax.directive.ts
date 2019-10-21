@@ -1,4 +1,5 @@
 import { Directive, OnInit, ElementRef } from '@angular/core';
+
 import { Parallax } from 'materialize-css';
 
 @Directive({
